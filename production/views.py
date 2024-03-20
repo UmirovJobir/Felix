@@ -107,4 +107,4 @@ class CalculateView(views.APIView):
 
         response_data = {"result": result}
 
-        return response.Response(response_data)
+        return response.Response(response_data, status=status.HTTP_200_OK)
